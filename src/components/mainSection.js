@@ -61,6 +61,7 @@ const MainSection = React.memo((props) => {
                 type="email"
                 id="email"
                 name="email"
+                aria-labelledby="email"
                 required
                 placeholder="Email Address"
                 onChange={changed}
@@ -74,7 +75,8 @@ const MainSection = React.memo((props) => {
                   <div className="error-symbol"> </div>
                 </>
               )}
-              <button onClick={clicked}>
+              <button onClick={clicked} 
+                aria-labelledby="submit">
                 <span></span>
               </button>
             </form>
