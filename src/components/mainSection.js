@@ -56,7 +56,7 @@ const MainSection = React.memo((props) => {
             </p>
           </div>
           <div className="wrapper-form">
-            <form>
+            <form name="myForm" action="/" method="post">
               <input
                 type="email"
                 id="email"
@@ -75,8 +75,8 @@ const MainSection = React.memo((props) => {
                   <div className="error-symbol"> </div>
                 </>
               )}
-              <button onClick={clicked} 
-                aria-labelledby="submit">
+              <button id="submitButton" name="submitButton" onClick={clicked} 
+                aria-labelledby="submitButton">
                 <span></span>
               </button>
             </form>
