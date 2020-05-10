@@ -1,0 +1,10 @@
+@mixin logo {
+  background-image: url("../../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 150px;
+  max-width: 150px;
+  height: 70px;
+  max-height: 70px;
+}

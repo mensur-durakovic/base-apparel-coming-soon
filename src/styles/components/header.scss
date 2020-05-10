@@ -1,0 +1,15 @@
+@import "../base/mixins.scss";
+
+header {
+  height: 100px;
+  width: 100%;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.logo {
+  @include logo;
+}
